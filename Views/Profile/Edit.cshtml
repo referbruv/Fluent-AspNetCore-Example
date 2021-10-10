@@ -1,0 +1,65 @@
+﻿@model FluentMyProfileApp.Models.ProfileVm
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="FirstName">First Name</label>
+        <input class="form-control" asp-for="FirstName" type="text" />
+        <span class="text-danger" asp-validation-for="FirstName"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName">Last Name</label>
+        <input class="form-control" asp-for="LastName" type="text" />
+        <span class="text-danger" asp-validation-for="LastName"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DateOfBirth">Date Of Birth</label>
+        <input class="form-control" asp-for="DateOfBirth" type="date" />
+        <span class="text-danger" asp-validation-for="DateOfBirth"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Bio">Bio</label>
+        <textarea class="form-control" asp-for="Bio"></textarea>
+        <span class="text-danger" asp-validation-for="Bio"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PrimaryAddress.Line1">Address Line 1</label>
+        <input class="form-control" asp-for="PrimaryAddress.Line1" />
+        <span class="text-danger" asp-validation-for="PrimaryAddress.Line1"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PrimaryAddress.Line2">Address Line 2</label>
+        <input class="form-control" asp-for="PrimaryAddress.Line2" />
+        <span class="text-danger" asp-validation-for="PrimaryAddress.Line2"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PrimaryAddress.City">City</label>
+        <input class="form-control" asp-for="PrimaryAddress.City" />
+        <span class="text-danger" asp-validation-for="PrimaryAddress.City"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PrimaryAddress.State">State</label>
+        <input class="form-control" asp-for="PrimaryAddress.State" />
+        <span class="text-danger" asp-validation-for="PrimaryAddress.State"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PrimaryAddress.Country">Country</label>
+        <input class="form-control" asp-for="PrimaryAddress.Country" />
+        <span class="text-danger" asp-validation-for="PrimaryAddress.Country"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PrimaryAddress.Pincode">Pincode</label>
+        <input class="form-control" asp-for="PrimaryAddress.Pincode" />
+        <span class="text-danger" asp-validation-for="PrimaryAddress.Pincode"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EmailAddress">Email Address</label>
+        <input class="form-control" asp-for="EmailAddress" type="email" />
+        <span class="text-danger" asp-validation-for="EmailAddress"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PhoneNumber">Phone Number</label>
+        <input class="form-control" asp-for="PhoneNumber" type="text" />
+        <span class="text-danger" asp-validation-for="PhoneNumber"></span>
+    </div>
+    <button class="btn btn-primary" type="submit">Save Changes</button>
+</form>
